@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 8px 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+/* nav css */
+
+.mynavbar .nav-link {
+   color:#fff
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #87d37c
+}
+.nav-link:focus, .nav-link:hover {
+    color: #87d37c;
+}
+
+#slider{
+    background: url(img/banner-bg.jpg) no-repeat center center / cover;
+}
+.slider-content{
+    padding: 180px 0;
+}
+.slider-content h3{
+    font-size: 40px;
+    color: #fff;
+}
+.slider-content h1{
+    display: inline-block;
+    font-size: 100px;
+    color:#fefcfe;
+    border: 2px solid #fefcfe;
+    padding: 12px 20px;
+}
+.slider-content h1 span{
+    color:#87d37c;
+}
+.slider-content h4{
+    color:#fff;
+    font-size: 36px;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color:#87d37c;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* about section css */
+.about-meta h3{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.about-meta p{
+    text-align: justify;
+}
+.about-icon i{
+    font-size: 80px;
+    transition: .5s;
+}
+.about-item:hover .about-icon i{
+    color: #87d37c;
+}
+.about-item:hover .about-meta h3{
+    color: #87d37c;
+}
+
+/* service section css */
+#service{
+    background: #e1e1e1;
+}
+.single-service {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    bottom: -100%;
+    transition: .5s;
+}
+.service-overlay a {
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-overlay a:hover{
+    background-color: #87d37c;
+    border: 1px solid #87d37c;
+}
+
+.single-service:hover .service-overlay {
+    bottom: 0
+}
+.navactive{
+    background: #87d37c;
+    border: 1px solid #87d37c;
+}
+.mix{
+    margin-bottom: 20px;
+}
+
+.single-portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+.single-portfolio-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgb(0 0 0 / 66%);
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.single-portfolio-overlay h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+.single-portfolio:hover .single-portfolio-overlay{
+    bottom: 0;
+}
+/* price card css */
+.price-card {
+    background: #39393a;
+    padding: 20px 50px;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+}
+.price-card-top {
+    border: 3px solid #fff;
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.price-card-top h2,h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.price-card-top h2{
+    font-size: 29px;
+}
+.price-card-top h2 sup{
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.price-card-top h4{
+    font-size: 19px;
+}
+.feature-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-list li {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.btn-order {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    color: #39393a;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    transition: .5s;
+
+}
+.price-card:hover{
+    background: #87d37c;
+}
+.price-card:hover .price-card-top{
+    background: #fff;
+    color: #87d37c;
+}
+.price-card:hover .btn-order{ 
+    color: #87d37c;
+}
+
+/* counter area css */
+
+.counter-area{
+    /* background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/counter-bg.jpg) no-repeat center center / cover; */
+    background:  url(img/counter-bg.jpg) no-repeat center center / cover;;
+    padding: 105px 0; 
+    position: relative;
+    z-index: 1;
+}
+.counter-area::after{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.658);
+    z-index: -1;
+}
+.single-counter {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+.single-counter h1{
+    font-size: 72px;
+}
+.single-counter h1,h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+ 
+}
+.single-counter h4{
+    font-size: 18px;
+}
+
+#gmap{
+    width: 100%;
+    height: 470px;
+}
+.contact-meta h3{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.contact-meta h3:hover{
+    color: #87d37c;
+}
+.contact-meta p{
+    text-align: center;
+}
+
+.contact-icon i{
+    font-size: 80px;
+    transition: .5s;
+}
+.contact-item:hover .contact-icon i{
+    color: #87d37c;
+}
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
